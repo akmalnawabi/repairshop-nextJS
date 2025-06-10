@@ -8,9 +8,3 @@ export default withAuth(
         isReturnToCurrentPage: true,
     }
 )
-
-export const config = {
-    matcher: [
-        
-    ]
-}
