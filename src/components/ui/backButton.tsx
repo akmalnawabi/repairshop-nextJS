@@ -7,11 +7,11 @@ import { ButtonHTMLAttributes } from "react";
 type Props = {
     title: string;
     className?: string;
-    variant?: "default" | "outline" | "ghost" | "link" | "destructive" | "secondary" | "success" | "warning" | "info" | null | undefined;
+    variant?: "default" | "outline" | "ghost" | "link" | "destructive" | "secondary" | null | undefined;
 
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
-export function BackButton({ title, variant, className,  ...props}: Props) {
+export function BackButton({ title, variant, className, ...props }: Props) {
     const router = useRouter();
 
     return (
